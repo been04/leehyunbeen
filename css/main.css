@@ -1,0 +1,629 @@
+body{
+    background-color: black;
+}
+
+.inner{
+    margin: 0 auto;
+    width: 1200px;
+}
+
+/*********************header*************************/
+#header{
+
+}
+
+#header .logo{
+    float: left;
+    width: 50px;
+    margin: 35px 0 0 110px;
+}
+
+#header .logo img{
+    width: 100%;
+}
+
+#header nav{
+    margin-right: 110px;
+    padding: 80px 20px 0 0;
+    float: right;
+    border-right: 2px solid #fff;
+}
+
+#header nav ul{
+    text-align: right;
+}
+
+#header nav ul li{
+    margin-top: 15px;
+}
+
+#header nav ul li:hover{
+    text-decoration: underline;
+}
+
+#header nav ul li a{
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+#header::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+
+/*********************section1*************************/
+
+#section1{
+    width: 100%;
+    position: relative;
+}
+
+#section1 .title{
+    margin: 50px 0 0 100px;
+    width: 88%;
+}
+
+#section1 .title img{
+    width: 100%;
+}
+
+#section1 .copyright{
+    margin: 50px 0 0 100px;
+    font-size: 1.2rem;
+    color: #9C9C9C;
+}
+
+#section1 .arrow{
+    position: absolute;
+    bottom: -50px;
+    right: 45%;
+    width: 105px;
+
+    animation-name: move;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#section1 .arrow img{
+    width: 100%;
+}
+
+@keyframes move{
+    0% {bottom: -50px;}
+    50% {bottom: -80px;}
+    100% {bottom: -50px;}
+}
+
+/*********************section2*************************/
+
+#section2{
+    position: relative;
+    margin-top: 120px;
+    width: 100%;
+}
+
+/**kidari ent**/
+
+#section2 .kidari{
+    float: right;
+}
+
+#section2 .kidari .img{
+    width: 1060px;
+}
+
+#section2 .kidari .img img{
+    width: 100%;
+}
+
+#section2 .kidari .text{
+    margin-top: 20px;
+    float: left;
+}
+
+#section2 .kidari .text h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#section2 .kidari .text h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#section2 .kidari ul{
+    float: right;
+    margin-right: 100px;
+}
+
+#section2 .kidari ul li{
+    float: left;
+    margin: 20px 0 0 30px;
+}
+
+/**star me**/
+
+#section2 .star_me{
+    margin: 120px 0;
+    float: left;
+}
+
+#section2 .star_me .img{
+    width: 1060px;
+}
+
+#section2 .star_me .img img{
+    width: 100%;
+}
+
+#section2 .star_me .text{
+    margin-top: 20px;
+    float: right;
+}
+
+#section2 .star_me .text h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: right;
+}
+
+#section2 .star_me .text h1{
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: right;
+}
+
+#section2 .star_me ul{
+    float: left;
+    margin-left: 80px;
+}
+
+#section2 .star_me ul li{
+    float: left;
+    margin: 20px 0 0 30px;
+}
+
+#section2 .star_me ::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/**g-idle**/
+
+#section2 .g_idle{
+    width: 1065px;
+    margin: 0 auto;
+}
+
+#section2 .g_idle .img{
+    width: 1060px;
+}
+
+#section2 .g_idle .img img{
+    width: 100%;
+}
+
+#section2 .g_idle .text{
+    margin-top: 20px;
+    float: left;
+}
+
+#section2 .g_idle .text h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#section2 .g_idle .text h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#section2 .g_idle ul{
+    float: right;
+}
+
+#section2 .g_idle ul li{
+    float: left;
+    margin: 20px 0 0 30px;
+}
+
+/**back**/
+
+#section2 .back{
+    position: absolute;
+    top: 500px;
+    left: -100px;
+    z-index: -10000;
+    font-size: 20rem;
+    font-family: Yj BLOCK;
+    opacity: 0.5;
+}
+
+#section2::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/*********************section3*************************/
+
+#section3{
+    position: relative;
+    margin-top: 250px;
+    widows: 100%;
+}
+
+/**fyn ent**/
+
+#section3 .fyn{
+    float: right;
+}
+
+#section3 .fyn .img{
+    width: 1060px;
+}
+
+#section3 .fyn .img img{
+    width: 100%;
+}
+
+#section3 .fyn .text{
+    margin-top: 20px;
+    float: left;
+}
+
+#section3 .fyn .text h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#section3 .fyn .text h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#section3 .fyn ul{
+    float: right;
+    margin-right: 100px;
+}
+
+#section3 .fyn   ul li{
+    float: left;
+    margin: 20px 0 0 30px;
+}
+
+/**willog**/
+
+#section3 .willog{
+    margin: 120px 0;
+    float: left;
+}
+
+#section3 .willog .img{
+    width: 1060px;
+}
+
+#section3 .willog .img img{
+    width: 100%;
+}
+
+#section3 .willog .text{
+    margin-top: 20px;
+    float: right;
+}
+
+#section3 .willog .text h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: right;
+}
+
+#section3 .willog .text h1{
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: right;
+}
+
+#section3 .willog ul{
+    float: left;
+    margin-left: 80px;
+}
+
+#section3 .willog ul li{
+    float: left;
+    margin: 20px 0 0 30px;
+}
+
+#section3 .willog ::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/**back**/
+
+#section3 .back{
+    position: absolute;
+    top: -150px;
+    right: 100px;
+    z-index: -10000;
+    font-size: 20rem;
+    font-family: Yj BLOCK;
+    opacity: 0.5;
+}
+
+#section3::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/*********************section4*************************/
+#section4{
+    position: relative;
+    margin-top: 200px;
+}
+
+#section4 .inner{
+    position: relative;
+}
+
+#section4 h3{
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#section4 h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+/**beer**/
+
+#section4 .beer{
+
+}
+
+#section4 .beer .img{
+    width: 740px;
+}
+
+#section4 .beer .img img {
+    width: 100%;
+}
+
+/**life**/
+
+#section4 .life{
+    margin-top: 80px;
+}
+
+#section4 .life .img{
+    width: 540px;
+}
+
+#section4 .life .img img {
+    width: 100%;
+}
+
+/**love**/
+
+#section4 .love{
+    position: absolute;
+    top: 380px;
+    right: 0;
+}
+
+#section4 .love .text{
+    float: left;
+    margin: 810px 30px 0 0;
+}
+
+#section4 .love .img{
+    width: 430px;
+    float: left;
+}
+
+#section4 .love .img img {
+    width: 100%;
+}
+
+/**disney**/
+
+#section4 .disney{
+    margin-top: 380px;
+}
+
+#section4 .disney .img{
+    width: 100%;
+}
+
+#section4 .disney .img img{
+    width: 100%;
+}
+
+/**alone**/
+#section4 .alone{
+    margin-top: 80px;
+    float: right;
+    text-align: right;
+}
+
+#section4 .alone .text{
+    float: left;
+    margin: 300px 30px 0 0;
+}
+
+#section4 .alone .img{
+    width: 740px;
+    float: left;
+}
+
+#section4 .alone .img img{
+    width: 740px;
+}
+
+
+/**overwatch**/
+
+#section4 .overwatch{
+    content: '';
+    display: block;
+    clear: both;
+    padding-top: 80px;
+}
+
+#section4 .overwatch .img{
+    float: left;
+    width: 740px;
+}
+
+#section4 .overwatch .img img{
+    width: 740px;
+}
+
+#section4 .overwatch .text{
+    float: left;
+    margin: 300px 0 0 30px;
+}
+
+/**back**/
+
+#section4 .back{
+    position: absolute;
+    top: -180px;
+    left: -80px;
+    z-index: -10000;
+    font-size: 23rem;
+    font-family: Yj BLOCK;
+    opacity: 0.5;
+}
+
+#section4::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/*********************section5*************************/
+#section5{
+    margin-top: 250px;
+    position: relative;
+}
+
+#section5 ul{
+    padding-top: 100px;
+}
+
+#section5 ul li{
+    float: left;
+    width: calc( (100% - 45px) / 4 );
+    margin: 20px 15px 0 0;
+}
+
+#section5 ul li:nth-child(4n){
+    margin-right: 0;
+}
+
+#section5 ul li a{
+    width: 100%;
+}
+
+#section5 ul li a img{
+    width: 100%;
+}
+
+/**back**/
+#section5 .back{
+    position: absolute;
+    top: -120px;
+    left: 200px;
+    z-index: -10000;
+    font-size: 23rem;
+    font-family: Yj BLOCK;
+    opacity: 0.5;
+}
+
+#section5::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/*********************footer*************************/
+#footer{
+    margin: 160px 0;
+}
+
+#footer .inner{
+    position: relative;
+}
+
+#footer h1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -10000;
+    text-align: right;
+    font-size: 12rem;
+    font-family: Yj BLOCK;
+    opacity: 0.5;
+}
+
+#footer .me{
+    float: left;
+    padding-top: 60px;
+    width: 25%;
+}
+
+#footer .me img{
+    width: 100%;
+}
+
+#footer .text{
+    float: left;
+    padding: 180px 0 0 100px;
+}
+
+#footer .text h2{
+    margin: 50px 0 30px 0;
+    font-size: 3rem;
+}
+
+#footer ul{
+    width: 100%;
+}
+
+#footer ul li{ 
+    margin-top: 20px;
+}
+
+#footer ul li > div{
+    float: left;
+    margin: 10px 20px 0 0;
+    width: 40px;
+}
+
+#footer ul li > div img{
+    width: 100%;
+}
+
+#footer ul li > p{
+    margin-right: 90px;
+    font-size: 2rem;
+}
+
+#footer::after{
+    content: '';
+    display: block;
+    clear: both;
+}
