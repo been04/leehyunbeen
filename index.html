@@ -7,6 +7,9 @@
 
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <link href="css/common.css" rel="stylesheet" type="text/css">
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -117,7 +120,7 @@
                 </div>
                 <ul>
                     <li>
-                        <a href="#"><img src="image/rink.png" alt="링크로 넘어가기"></a>
+                        <a href="#"><img src="image/detail.png" alt="자세히보기"></a>
                     </li>
                 </ul>
             </div>
@@ -131,7 +134,7 @@
                 </div>
                 <ul>
                     <li>
-                        <a href="#"><img src="image/rink.png" alt="링크로 넘어가기"></a>
+                        <a href="#"><img src="image/detail.png" alt="자세히보기"></a>
                     </li>
                 </ul>
                 <div class="back">MOBILE</div>
@@ -155,6 +158,9 @@
                     <h1>슬기로운 생</h1>
                 </div>
                 <div class="love">
+                    <div class="img_m">
+                        <img src="image/cardnews1.png" alt="연애의 과학">
+                    </div>
                     <div class="text">
                         <h3>CARD NEWS</h3>
                         <h1>연애의 과학</h1>
@@ -164,6 +170,9 @@
                     </div>
                 </div>
                 <div class="disney">
+                    <div class="img_m">
+                        <img src="image/cardnews3.png" alt="디즈니 영화추천">
+                    </div>
                     <div class="img">
                         <img src="image/cardnews2.png" alt="디즈니 영화추천">
                     </div>
@@ -171,6 +180,9 @@
                     <h1>디즈니 영화 추천</h1>
                 </div>
                 <div class="alone">
+                    <div class="img_m">
+                        <img src="image/banner1.png" alt="나혼자산다">
+                    </div>
                     <div class="text">
                         <h3>BANNER</h3>
                         <h1>나 혼자 산다</h1>
@@ -273,6 +285,43 @@
                 </div>
             </div>
         </footer>
+
+        
+        <div class="sub_back"></div>
+        <div id="sub">
+            <div class="kidari">
+                <div class="sub_in">
+                    <div class="top">
+                        <h4>모든 작업물은 포트폴리오용으로 제작되었습니다.</h4>
+                        <h6>Designed by Lee Hyunbeen</h6>
+                        <div>
+                            <img src="image/x.png" alt="취소">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 </body>
+
+<script>
+    $(function(){
+
+        var show = $(this).find('.subMenu');
+
+        $(window).scroll(function(){
+		 //alert($(document).scrollTop());
+        if($(document).scrollTop()>= 200){
+            menu.css({background:'rgba(0,0,0,0.3)'});
+            }
+        else {
+            menu.css({background:'rgba(0,0,0,1)'});
+            }
+		});
+    });
+</script>
+
+
 </html>

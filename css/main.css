@@ -1,10 +1,11 @@
 body{
     background-color: black;
+    font-family: 'Noto sans KR';
 }
 
 .inner{
     margin: 0 auto;
-    width: 1200px;
+    max-width: 1200px;
 }
 
 /*********************header*************************/
@@ -107,14 +108,26 @@ body{
     width: 100%;
 }
 
+#section2 ul li{
+    width: 35px;
+}
+
+#section2 ul li a img{
+    width: 100%;
+}
+
 /**kidari ent**/
+
+.hide{
+    opacity: 0;
+}
 
 #section2 .kidari{
     float: right;
 }
 
 #section2 .kidari .img{
-    width: 1060px;
+    max-width: 1060px;
 }
 
 #section2 .kidari .img img{
@@ -146,6 +159,8 @@ body{
     margin: 20px 0 0 30px;
 }
 
+
+
 /**star me**/
 
 #section2 .star_me{
@@ -154,7 +169,7 @@ body{
 }
 
 #section2 .star_me .img{
-    width: 1060px;
+    max-width: 1060px
 }
 
 #section2 .star_me .img img{
@@ -197,12 +212,12 @@ body{
 /**g-idle**/
 
 #section2 .g_idle{
-    width: 1065px;
+    max-width: 1065px;
     margin: 0 auto;
 }
 
 #section2 .g_idle .img{
-    width: 1060px;
+    max-width: 1060px;
 }
 
 #section2 .g_idle .img img{
@@ -256,7 +271,15 @@ body{
 #section3{
     position: relative;
     margin-top: 250px;
-    widows: 100%;
+    width: 100%;
+}
+
+#section3 ul li{
+    width: 35px;
+}
+
+#section3 ul li a img{
+    width: 100%;
 }
 
 /**fyn ent**/
@@ -266,7 +289,7 @@ body{
 }
 
 #section3 .fyn .img{
-    width: 1060px;
+    max-width: 1060px;
 }
 
 #section3 .fyn .img img{
@@ -306,7 +329,7 @@ body{
 }
 
 #section3 .willog .img{
-    width: 1060px;
+    max-width: 1060px;
 }
 
 #section3 .willog .img img{
@@ -392,7 +415,7 @@ body{
 }
 
 #section4 .beer .img{
-    width: 740px;
+    max-width: 740px;
 }
 
 #section4 .beer .img img {
@@ -406,7 +429,7 @@ body{
 }
 
 #section4 .life .img{
-    width: 540px;
+    max-width: 540px;
 }
 
 #section4 .life .img img {
@@ -421,13 +444,17 @@ body{
     right: 0;
 }
 
+#section4 .love .img_m{
+    display: none;
+}
+
 #section4 .love .text{
     float: left;
     margin: 810px 30px 0 0;
 }
 
 #section4 .love .img{
-    width: 430px;
+    max-width: 430px;
     float: left;
 }
 
@@ -439,6 +466,10 @@ body{
 
 #section4 .disney{
     margin-top: 380px;
+}
+
+#section4 .disney .img_m{
+    display: none;
 }
 
 #section4 .disney .img{
@@ -456,18 +487,22 @@ body{
     text-align: right;
 }
 
+#section4 .alone .img_m{
+    display: none;
+}
+
 #section4 .alone .text{
     float: left;
     margin: 300px 30px 0 0;
 }
 
 #section4 .alone .img{
-    width: 740px;
+    max-width: 740px;
     float: left;
 }
 
 #section4 .alone .img img{
-    width: 740px;
+    width: 100%;
 }
 
 
@@ -482,11 +517,11 @@ body{
 
 #section4 .overwatch .img{
     float: left;
-    width: 740px;
+    max-width: 740px;
 }
 
 #section4 .overwatch .img img{
-    width: 740px;
+    width: 100%;
 }
 
 #section4 .overwatch .text{
@@ -626,4 +661,441 @@ body{
     content: '';
     display: block;
     clear: both;
+}
+
+
+/*****************************************sub********************************************/
+.wrap{
+    position: relative;
+}
+.sub_back{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999999999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#sub{
+    display: none;
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    z-index: 99999999999999;
+    margin-left: -640px;
+    width: 1280px;
+    height: auto;
+    background-color: #fff;
+    color: #383838;
+}
+
+/*********************kidari*************************/
+#sub .kidari{
+
+}
+
+
+
+
+@media all and (max-width:750px){
+    body{
+    }
+
+    /*********************header*************************/
+
+    #header nav{
+        margin-right: 30px;
+    }
+
+    #header .logo{
+        margin-left: 30px;
+    }
+
+    /*********************section1*************************/
+    
+    #section1 .title{
+        margin-left: 30px;
+    }
+    
+    #section1 .copyright{
+        margin-left: 30px;
+    }
+    
+    #section1 .arrow{
+        bottom: -60px;
+        width: 50px;
+    }
+    
+    @keyframes move{
+        0% {bottom: -60px;}
+        50% {bottom: -80px;}
+        100% {bottom: -60px;}
+    }
+
+    /*********************section2*************************/
+    #section2{
+        margin-top: 250px;
+    }
+    
+    /**kidari ent**/
+    
+    #section2 .kidari .text{
+        margin: 20px 0 0 10px;
+    }
+    
+    #section2 .kidari .text h3{
+        font-size: 0.9rem;
+    }
+    
+    #section2 .kidari .text h1{
+        font-size: 1.5rem;
+    }
+
+    #section2 .kidari ul{
+        margin-right: 10px;
+    }
+    
+    /**star me**/
+
+    #section2 .star_me .text{
+        margin: 20px 10px 0 0;
+    }
+    
+    #section2 .star_me .text h3{
+        font-size: 0.9rem;
+    }
+    
+    #section2 .star_me .text h1{
+        font-size: 1.5rem;
+    }
+    
+    #section2 .star_me ul{
+        margin-left: 0px;
+    }
+
+    #section2 .star_me ul li{
+        margin: 20px 20px 0 10px;
+    }
+    
+    
+    #section2 .star_me ::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    
+    /**g-idle**/   
+    #section2 .g_idle .text{
+        margin: 20px 0 0 10px;
+        float: left;
+    }
+    
+    #section2 .g_idle .text h3{
+        font-size: 0.9rem;
+    }
+    
+    #section2 .g_idle .text h1{
+        font-size: 1.5rem;
+    }
+    
+    #section2 .g_idle ul{
+        margin-right: 10px;
+    }
+
+    /**back**/
+    
+    #section2 .back{
+        top: -100px;
+        left: -30px;
+        font-size: 10rem;
+    }
+
+
+    /*********************section3*************************/
+
+    #section3{
+        position: relative;
+        margin-top: 250px;
+        width: 100%;
+    }
+
+    /**fyn ent**/
+    #section3 .fyn .text{
+        margin: 20px 0 0 10px;
+    }
+
+    #section3 .fyn .text h3{
+        font-size: 0.9rem;
+    }
+
+    #section3 .fyn .text h1{
+        font-size: 1.5rem;
+    }
+
+    #section3 .fyn ul{
+        margin-right: 10px;
+    }
+
+    /**willog**/
+    #section3 .willog .text{
+        margin: 20px 10px 0 0;
+    }
+
+    #section3 .willog .text h3{
+        font-size: 0.9rem;
+    }
+
+    #section3 .willog .text h1{
+        font-size: 1.5rem;
+    }
+
+    #section3 .willog ul{
+        margin-left: 10px;
+    }
+
+    #section3 .willog ul li{
+        margin: 20px 0 0 0px;
+    }
+
+    /**back**/
+
+    #section3 .back{
+        top: -80px;
+        left: -30px;
+        font-size: 8rem;
+    }
+
+    /*********************section4*************************/
+    #section4{
+        position: relative;
+        margin-top: 120px;
+    }
+
+    #section4 .inner{
+        position: relative;
+    }
+
+    #section4 h3{
+        font-size: 0.9rem;
+        margin: 10px 10px 0 10px;
+    }
+
+    #section4 h1{
+        font-size: 1.5rem;
+        margin: 0 10px;
+    }
+
+    /**beer**/
+
+    /**life**/
+
+    #section4 .life{
+        margin-top: 80px;
+    }
+
+    #section4 .life .img{
+        max-width: 540px;
+    }
+
+    #section4 .life .img img {
+        width: 100%;
+    }
+
+    /**love**/
+
+    #section4 .love{
+        margin-top: 100px;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    #section4 .love .img_m{
+        display: block;
+        width: 100%;
+    }
+
+    #section4 .love .img_m img{
+        width: 100%;
+    }
+
+    #section4 .love .text{
+        float: left;
+        margin: 0px 30px 0 0;
+    }
+
+    #section4 .love .img{
+        display: none;
+    }
+
+    /**disney**/
+
+    #section4 .disney{
+        margin-top: 120px;
+    }
+
+    #section4 .disney .img_m{
+        display: block;
+        width: 100%;
+    } 
+
+    #section4 .disney .img_m img{
+        width: 100%;
+    }
+
+    #section4 .disney .img{
+        display: none;
+    }
+
+    /**alone**/
+    #section4 .alone{
+        margin-top: 80px;
+        text-align: left;
+    }
+
+    #section4 .alone .text{
+        float: left;
+        margin: 0px 0px 0 0;
+    }
+
+    #section4 .alone .img{
+        display: none;
+    }
+
+    #section4 .alone .img_m{
+        display: block;
+        width: 100%;
+    }
+
+    #section4 .alone .img_m img{
+        width: 100%;
+    }
+
+
+
+    /**overwatch**/
+
+    #section4 .overwatch{
+        content: '';
+        display: block;
+        clear: both;
+        padding-top: 80px;
+    }
+
+    #section4 .overwatch .img{
+        float: left;
+        max-width: 740px;
+    }
+
+    #section4 .overwatch .img img{
+        width: 100%;
+    }
+
+    #section4 .overwatch .text{
+        float: left;
+        margin: 10px 0 0 0px;
+    }
+
+    /**back**/
+
+    #section4 .back{
+        top: -60px;
+        left: -20px;
+        font-size: 6.5rem;
+    }
+
+    /*********************section5*************************/
+    #section5{
+        margin-top: 120px;
+        position: relative;
+    }
+
+    #section5 ul{
+        padding-top: 100px;
+    }
+
+    #section5 ul li{
+        float: left;
+        width: calc( (100% - 25px) / 2 );
+        margin: 20px 25px 0 0;
+    }
+
+    #section5 ul li:nth-child(2n){
+        margin-right: 0;
+    }
+
+    #section5 ul li a{
+        width: 100%;
+    }
+
+    #section5 ul li a img{
+        width: 100%;
+    }
+
+    /**back**/
+    #section5 .back{
+        top: 30px;
+        left: -30px;
+        font-size: 10rem;
+    }
+
+    /*********************footer*************************/
+    #footer{
+        margin: 160px 0;
+    }
+
+    #footer .inner{
+        position: relative;
+    }
+
+    #footer h1{
+        font-size: 5.5rem;
+    }
+
+    #footer .me{
+        float: left;
+        margin-left: 20px;
+        padding-top: 60px;
+        width: 28%;
+    }
+
+    #footer .me img{
+        width: 100%;
+    }
+
+    #footer .text{
+        float: left;
+        width: 60%;
+        padding: 50px 0 0 30px;
+    }
+
+    #footer .text h2{
+        margin: 50px 0 30px 0;
+        font-size: 1.2rem;
+    }
+
+    #footer ul{
+        width: 100%;
+    }
+
+    #footer ul li{ 
+        margin-top: 20px;
+    }
+
+    #footer ul li > div{
+        float: left;
+        margin: 0px 20px 0 0;
+        width: 20px;
+    }
+
+    #footer ul li > div img{
+        width: 100%;
+    }
+
+    #footer ul li > p{
+        margin-right: 90px;
+        font-size: 1rem;
+    }
 }
