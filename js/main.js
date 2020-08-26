@@ -47,8 +47,16 @@ $(function(){
     
 
     //x
-    $('x').click(function(){
-        $('#sub').css( 'display', 'none' );
+    $('.x').click(function(){
+        $('.sub_back').css( 'display', 'none' );
+
+                
+        $('#sub > .kidari').css( 'display', 'none' );
+        $('#sub > .star_me').css( 'display', 'none' );
+        $('#sub > .beer').css( 'display', 'none' );
+        $('#sub > .life').css( 'display', 'none' );
+        $('#sub > .love').css( 'display', 'none' );
+        $('#sub > .disney').css( 'display', 'none' );
     });
 
 })
