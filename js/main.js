@@ -13,6 +13,18 @@ $(function(){
         $('#sub > .star_me').css( 'display', 'block' );
     });
 
+    $('.f_more').click(function(){
+        $('#sub').css( 'display', 'block' );
+        $('.sub_back').css( 'display', 'block' );
+        $('#sub > .fyn').css( 'display', 'block' );
+    });
+
+    $('.w_more').click(function(){
+        $('#sub').css( 'display', 'block' );
+        $('.sub_back').css( 'display', 'block' );
+        $('#sub > .willog').css( 'display', 'block' );
+    });
+
     //sub_beer
     $('.b_more').click(function(){
         $('#sub').css( 'display', 'block' );
