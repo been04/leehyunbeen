@@ -12,6 +12,40 @@
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+    $(document).ready(function() {
+    var menu = $("nav > ul > li");
+        var content = $(".wrap > section");
+        
+        menu.click(function(){
+            event.preventDefault();
+            
+            var tg = $(this);
+
+            var idx = tg.index();
+
+            var section = content.eq(idx);
+
+            var tt = section.offset().top;
+            $("html,body").stop().animate({scrollTop:tt});
+            });
+            $(window).scroll(function(){
+            var location = $(window).scrollTop();
+            content.each(function() {
+            var tg = $(this);
+                var idx = tg.index();
+                
+                if(tg.offset().top <= location){ 
+                    menu.removeClass("active");
+                    menu.eq(idx).addClass("active");
+                    }
+
+        });
+            
+                
+                });
+    });
+    </script>
 </head>
 <body>
     <div class="wrap">
@@ -22,13 +56,16 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="#section2">WEB & MOBILE</a>
+                        <a href="#section2">WEB</a>
                     </li>
                     <li>
-                        <a href="#section3">GRAPHIC</a>
+                        <a href="#section3">MOBILE</a>
                     </li>
                     <li>
-                        <a href="#section4">LOGO</a>
+                        <a href="#section4">GRAPHIC</a>
+                    </li>
+                    <li>
+                        <a href="#section5">LOGO</a>
                     </li>
                     <li>
                         <a href="#footer">ABOUT</a>
@@ -37,7 +74,7 @@
             </nav>
         </header>
 
-        <section id="section1">
+        <div id="section1">
             <div class="title">
                 <img src="image/title.png" alt="">
             </div>
@@ -48,7 +85,7 @@
             <div class="arrow">
                 <img src="image/arrow.png" alt="스크롤">
             </div>
-        </section>
+        </div>
 
         <section id="section2">
             <div class="kidari">
@@ -311,7 +348,7 @@
             <div class="back">LOGO</div>
         </section>
 
-        <footer id="footer">
+        <section id="footer">
             <div class="inner">
                 <h1>DESIGNER</h1>
                 <div>
@@ -343,7 +380,7 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </>
 
         
         <div class="sub_back">
