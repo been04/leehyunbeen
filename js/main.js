@@ -65,6 +65,8 @@ $(function(){
                 
         $('#sub > .kidari').css( 'display', 'none' );
         $('#sub > .star_me').css( 'display', 'none' );
+        $('#sub > .fyn').css( 'display', 'none' );
+        $('#sub > .willog').css( 'display', 'none' );
         $('#sub > .beer').css( 'display', 'none' );
         $('#sub > .life').css( 'display', 'none' );
         $('#sub > .love').css( 'display', 'none' );
